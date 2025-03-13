@@ -1,0 +1,30 @@
+<mat-toolbar color="primary"> Cadastro de Clientes </mat-toolbar>
+
+<mat-card>
+  <mat-card-content>
+    <form>
+      <mat-form-field appearance="fill">
+        <mat-label>Nome</mat-label>
+        <input matInput placeholder="Digite o nome" />
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Idade</mat-label>
+        <input matInput type="number" placeholder="Digite a idade" />
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Diferencial de Entrega</mat-label>
+        <mat-select>
+          <mat-option value="padrao">Entrega Padrão</mat-option>
+          <mat-option value="express">Entrega Express</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <div>
+        <button mat-raised-button color="primary">Salvar</button>
+        <button mat-raised-button color="warn">Cancelar</button>
+      </div>
+    </form>
+  </mat-card-content>
+</mat-card>
